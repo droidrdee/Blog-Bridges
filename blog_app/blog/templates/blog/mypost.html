@@ -1,0 +1,65 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% load static %}
+<div class="container custom-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li><a href="/home"><img class="w-50 " src="{% static 'image/pho.png' %}" alt=""></a></li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/newpost">New Post</a>
+                        <a class="dropdown-item" href="/mypost">My Posts</a>
+                        <a class="dropdown-item" href="/signout">Sign Out</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </nav>
+    <br><br>
+    <div class="container">
+
+    </div>
+    <br>
+    <div class="container custom-container" style="max-width: 1350px; ">
+        <h1>My Posts </h1>
+        {% for post in posts %}
+        <article class="media content-section">
+
+            <div class="media-body" style="border: 1px solid black; padding: 23px; margin-bottom: 10px;">
+
+                <div class="article-metadata">
+                    <!-- <h3 aligh="left">{{ post.author }} </h3>
+                    <h5 aligh="right">{{ post.date_posted|date:"F d, Y" }}</h5> -->
+                    <h1 style="text-align:left;float:left; color: #000000;">{{ post.author }}</h1>
+                    <h5 style="text-align:right;float:right;">{{ post.date_posted|date:"F d, Y" }}</h5>
+                    <hr style="clear:both;" />
+
+                </div>
+                <h3>{{ post.title }}</h3>
+                <p class="article-content">{{ post.content }}</p>
+                <br><br>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock %}
