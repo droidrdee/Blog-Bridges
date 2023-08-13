@@ -48,7 +48,7 @@ def newPost(request):
     if request.method == 'POST':
         title = request.POST.get('title')
         content = request.POST.get('content')
-        npost = models.post(title=title, content=content, auther=request.user)
+        npost = models.Post(title=title, content=content, author=request.user)
         npost.save()
         return redirect('/home')
     
@@ -66,8 +66,6 @@ def myPost(request):
 
 
 def signout(request):
-    if request.method == 'POST':
-        logout(request, user=request.auther)
-        return redirect('/loginn')
-    
-    return render(request, 'blog/home.html')
+    logout(request)
+    return redirect('/loginn')
+
