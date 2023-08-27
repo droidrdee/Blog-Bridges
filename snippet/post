@@ -1,0 +1,18 @@
+ <div class="container custom-container" style="max-width: 1350px; ">
+        
+        <article class="media content-section">
+
+            <div class="media-body" style="border: 1px solid black; padding: 23px; margin-bottom: 10px;">
+                <div class="article-metadata">
+                    <h1 class="text-uppercase" style="text-align:left;float:left; color: #000000;"></h1>
+                    <h5 style="text-align:right;float:right;"> </h5>
+                    <hr style="clear:both;" />
+
+                </div>
+                <h3></h3>
+                <p class="article-content"></p>
+                <br><br>
+            </div>
+        </article>
+        
+    </div>

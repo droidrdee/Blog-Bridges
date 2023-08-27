@@ -1,0 +1,29 @@
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li><a href="#"><img class="w-50 " src="#" alt=""></a></li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">New Post</a>
+                        <a class="dropdown-item" href="#">My Posts</a>
+                        <a class="dropdown-item" href="#">Sign Out</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </nav>

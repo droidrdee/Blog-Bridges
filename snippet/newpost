@@ -1,0 +1,18 @@
+<form >
+        
+        <div class="container custom-container " style="max-width: 1250px;">
+            <br><br>
+            <h1 class="fw-bolder"> Make a new post.</h1>
+            <hr><br>
+            <div class="mb-3">
+                <h3><label for="exampleInputEmail1" class="form-label">Heading/Title</label></h3>
+                <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp" >
+            </div>
+            <div class="form-group">
+                <h3><label for="exampleFormControlTextarea3">Content</label></h3>
+                <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" ></textarea>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Post">
+        </div>
+    </form>
+
